@@ -7,8 +7,8 @@ resource "aws_cloudwatch_log_group" "exam" {
 
 #creating cloud watch metrics and alarm
 
-resource "aws_cloudwatch_metric_alaram" "cpu_alarm" {
-   alaram_name = var.alaram_name
+resource "aws_cloudwatch_metric_alarm" "cpu_alarm" {
+   alaram_name = var.alarm_name
    comparison_operator = "GreaterThanThreshold"
    evaluation_period = 2
    metric_name = var.metric_name
